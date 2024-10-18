@@ -1,139 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showcase</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<style>
-
-
-    * {
-        box-sizing: border-box;
-        margin: 0;               /* margin: 0;   CSS RESET */
-        padding: 0;
-    }
-
-
-
-    body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-
-    #navbar {
-        display: flex;
-        background-color: #ECF4F9;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-
-        
-    }
-    #navbar .logo {
-        font-weight: bold;
-        font-size: larger;
-        margin: 0 25px;
-        color:  black;
-    }
-   
-
-    #navbar ul {
-        display: flex;
-        list-style: none;
-        align-items: center;
-        
-    }
-
-    #navbar ul li a {
-        margin: 0 0 4px;
-        margin-right: 10px;
-        padding: 12px;
-        text-decoration: none;
-        color: black;
-        
-    }
-
-
-    #navbar ul li a:hover {
-        background-color: #B3B9BD;
-        text-decoration: underline;
-        border-radius: 10px 10px;
-        border-color: black;
-        
-
-    }
-
-    #showcase {
-        background: #333 url("./images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg") no-repeat center center/cover;
-        height: 100vh;
-        color: white;
-
-    }
-    #showcase .showcase-content {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        padding: 0 2rem;
-        background-color: rgba(0,0,0,0.5); /* red, green, blue, průhlednost */
-    }
-
-    .l-heading {
-        font-size: 4rem;
-        margin-bottom: 0,75rem;
-        line-height: 1.1;
-
-
-    }
-
-    .lead {
-        font-size: 1,3rem;
-        margin-bottom: 2rem;
-    }
-
-    .btn {
-        display: inline-block;
-        color: black;
-        background-color: #ECF4F9;
-        padding: 1rem 2rem;
-        border: none;
-        border-radius: 10px 10px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .btn:hover {
-        background-color: #B3B9BD;
-        text-decoration: underline;
-    }
-
-</style>
-
-
+    <title>Protein Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav id="navbar">
         <div class="logo"><i class="fa-solid fa-dumbbell"></i>Protein
-
         </div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#form">Form</a></li>
+            <li><a href="#What">What</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#account">Account</a></li>
             <li><a href="#about">About</a></li>
         </ul>
-
     </nav>
 
-
-    <!-- Photo by <a href="https://unsplash.com/@miloezger?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Milo Miloezger</a> on <a href="https://unsplash.com/photos/coffee-beans-on-gray-steel-wok-rKYRJu0n06Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-   
-    
     <div id="showcase">
         <div class="showcase-content">
             <h1 class="l-heading">Protein</h1>
@@ -142,9 +32,27 @@
         </div>
     </div>
 
+    <footer>
+        <div class="footer-container">
+            <h3>O nás</h3>
+            <p>Jsme firma zaměřená na poskytování kvalitních proteinových produktů. Naším cílem je podpořit zdravý a
+                aktivní životní styl.</p>
+        </div>
 
-    <!-- Photo by <a href="https://unsplash.com/@sergeykotenev?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sergey Kotenev</a> on <a href="https://unsplash.com/photos/a-wooden-table-topped-with-two-bags-of-coffee-beans-ChfwQsp_JBA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-  
+        <div class="footer-container" id="contact">
+            <h3>Kontakt</h3>
+            <p>Email: <a href="mailto:info@protein.com">info@protein.com</a></p>
+            <p>Telefon: +420 123 456 789</p>
+        </div>
+
+        <div class="footer-container">
+            <h3>Sledujte nás</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
 
 </body>
+
 </html>
