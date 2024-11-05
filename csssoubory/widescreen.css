@@ -1,0 +1,71 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+#navbar .logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none; /* Skryjeme hamburgerové menu na širších obrazovkách */
+}
+
+/* Showcase */
+#showcase {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+}
+
+.showcase-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.showcase-content p {
+    font-size: 1.2em;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    margin-bottom: 15px;
+}

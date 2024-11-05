@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../csssoubory/style.css">
+    <link rel="stylesheet" href="../csssoubory/styleaccount.css"> <!-- Odkaz na styly modalu -->
+    <link rel="stylesheet" href="../csssoubory/widescreen.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="../csssoubory/mobile.css" media="(max-width769px)"
+
+<body>
+    <nav id="navbar">
+        <div class="logo"><i class="fa-solid fa-dumbbell"></i>Protein</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="../htmlsoubory/index.html">Home</a></li>
+            <li><a href="../htmlsoubory/aboutus.html">O nás</a></li>
+            <li><a href="../htmlsoubory/contact.html">Kontakt</a></li>
+            <li><a href="#account" id="accountBtn">Účet</a></li>
+        </ul>
+    </nav>
+
+    <div id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">Protein</h1>
+            <p class="lead">Naše firma Vám nabízí luxusní Protein.</p>
+            <a href="" class="btn">More <i class="fa-solid fa-arrow-down"></i></a> <!-- Tlačítko s ikonou šipky dolů -->
+        </div>
+    </div>
+
+    <!-- Modal pro přihlášení/registraci -->
+    <div id="accountModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Přihlášení nebo registrace</h2>
+            <form id="loginForm">
+                <label for="username">Uživatelské jméno:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Heslo:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn">Přihlásit se</button>
+            </form>
+            <hr>
+            <p>Nemáte účet? <a href="#" id="registerLink">Registrujte se zde.</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <h3>O nás</h3>
+            <p>Jsme firma zaměřená na poskytování kvalitních proteinových produktů. Naším cílem je podpořit zdravý a aktivní životní styl.</p>
+        </div>
+
+        <div class="footer-container" id="contact">
+            <h3>Kontakt</h3>
+            <p>Email: <a href="mailto:info@protein.com">info@protein.com</a></p>
+            <p>Telefon: +420 123 456 789</p>
+        </div>
+
+        <div class="footer-container">
+            <h3>Sledujte nás</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Zobrazení modalu
+        const modal = document.getElementById("accountModal");
+        const accountLink = document.querySelector("#navbar ul li a[href='#account']");
+        const closeModal = document.getElementsByClassName("close")[0];
+
+        accountLink.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        }
+
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="mobilemenuscript.js" defer></script>
+</body>
+
+</html>
