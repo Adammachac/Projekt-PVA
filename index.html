@@ -10,6 +10,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleaccount.css"> <!-- Odkaz na styly modalu -->
+    <link rel="stylesheet" href="widescreen.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 768px)">
 </head>
 
 <body>
@@ -32,7 +34,7 @@
         <div class="showcase-content">
             <h1 class="l-heading">Protein</h1>
             <p class="lead">Naše firma Vám nabízí luxusní Protein.</p>
-            <a href="" class="btn">More</a>
+            <a href="" class="btn">More <i class="fa-solid fa-arrow-down"></i></a> <!-- Tlačítko s ikonou šipky dolů -->
         </div>
     </div>
 
@@ -94,6 +96,7 @@
             }
         }
     </script>
+    <script src="mobilemenuscript.js" defer></script>
 </body>
 
 </html>
