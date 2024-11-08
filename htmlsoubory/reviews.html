@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenze</title>
+    <link rel="stylesheet" href="../csssoubory/stylereviews.css">
+    <link rel="stylesheet" href="../csssoubory/styleaccount.css">
+    <link rel="stylesheet" href="../csssoubory/widescreen.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="../csssoubory/mobile.css" media="(max-width: 768px)">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="logo"><i class="fa-solid fa-dumbbell"></i>Protein</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../htmlsoubory/aboutus.html">O nás</a></li>
+            <li><a href="../htmlsoubory/contact.html">Kontakt</a></li>
+            <li><a href="../htmlsoubory/reviews.html">Recenze</a></li>
+            <li><a href="#account" id="accountBtn">Účet</a></li>
+        </ul>
+    </nav>
+
+    <!-- Recenze -->
+    <section id="reviews">
+        <div class="reviews-container">
+            <h1>Recenze</h1>
+            <p>Zde si můžete přečíst recenze od našich zákazníků nebo přidat vlastní recenzi.</p>
+            
+            <!-- Formulář pro přidání recenze -->
+            <form class="review-form" id="reviewForm">
+                <label for="name">Vaše jméno:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="review">Vaše recenze:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+                
+                <button type="submit">Přidat recenzi</button>
+            </form>
+            
+            <div class="reviews-list">
+                <h2>Přidané recenze:</h2>
+                <div id="reviewList"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <h3>O nás</h3>
+            <p>Jsme firma zaměřená na poskytování kvalitních proteinových produktů. Naším cílem je podpořit zdravý a aktivní životní styl.</p>
+        </div>
+
+        <div class="footer-container" id="contact">
+            <h3>Kontakt</h3>
+            <p>Email: <a href="mailto:info@protein.com">info@protein.com</a></p>
+            <p>Telefon: +420 123 456 789</p>
+        </div>
+
+        <div class="footer-container">
+            <h3>Sledujte nás</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="../jssoubory/reviewscrips.js"></script>
+    <script src="../jssoubory/mobilemenuscript.js"></script>
+</body>
+</html>

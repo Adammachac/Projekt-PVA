@@ -1,0 +1,217 @@
+/* Globální nastavení */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+}
+
+#navbar .logo {
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: #B3B9BD;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none; /* Přizpůsobení pro responzivitu */
+}
+
+@media (max-width: 768px) {
+    #navbar ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+/* Sekce recenzí */
+#reviews {
+    padding: 60px 20px;
+    background-color: #ECF4F9;
+    text-align: center;
+}
+
+.reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.review-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.review-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.review-form button:hover {
+    background-color: #B3B9BD;
+}
+
+/* Přidané recenze */
+.reviews-list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.reviews-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #333;
+}
+
+.reviews-item strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.reviews-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.reviews-list h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    flex: 1;
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.footer-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-container a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+footer i {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #reviews {
+        padding: 40px 10px;
+    }
+
+    .review-form button {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    .reviews-item {
+        padding: 12px;
+    }
+
+    .reviews-item strong {
+        font-size: 1.1rem;
+    }
+
+    .reviews-item p {
+        font-size: 0.95rem;
+    }
+}
