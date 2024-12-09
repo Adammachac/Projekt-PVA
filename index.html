@@ -1,157 +1,104 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BDUM - Chytrá a bezpečná domácnost</title>
-    <link rel="stylesheet" href="./cssstylystranek/style.css">
-    <link rel="stylesheet" href="./cssstylystranek/navbar.css">
-</head>
-<body> <!-- Otevření tagu body -->
+    <title>Protein Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./csssoubory/style.css">
+    <link rel="stylesheet" href="./csssoubory/styleaccount.css"> <!-- Odkaz na styly modalu -->
+    <link rel="stylesheet" href="./csssoubory/widescreen.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="./csssoubory/mobile.css" media="(max-width: 768px)"> 
+    <link rel="stylesheet" href="./csssoubory/navbar.css">
 
-<header>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <!-- Logo a kontaktní informace na levé straně -->
-            <div class="left-side">
-                <!-- Logo -->
-                <a href="#" class="logo">
-                    <img src="./images/logo_BD_png-05.png" alt="BDUM Logo" class="logo-img">
-                </a>
-                
-                <!-- Kontaktní informace -->
-                <div class="contact-info">
-                    <p><strong>Ing. Josef Macháč</strong></p>
-                    <p>Telefon: <strong>+420 723 368 821</strong></p>
-                </div>
-            </div>
 
-            <!-- Navigační menu -->
-            <ul class="navbar-menu">
-                <li><a href="#zabezpecovaci-systémy">Zabezpečovací systém</a></li>
-                <li><a href="#kamery">Kamerové systémy</a></li>
-                <li><a href="#chytro-dum">Wi-Fi pro celý dům</a></li>
-                <li><a href="#facebook">Chytrý Dům LOXONE</a></li>
-            </ul>
-
-            <!-- Mobilní menu -->
-            <div class="navbar-toggle" id="navbar-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+<body>
+    <nav id="navbar">
+        <div class="logo"><i class="fa-solid fa-dumbbell"></i>Protein</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+        <ul class="nav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./htmlsoubory/aboutus.html">O nás</a></li>
+            <li><a href="./htmlsoubory/contact.html">Kontakt</a></li>
+            <li><a href="../htmlsoubory/reviews.html">Recenze</a></li>
+            <li><a href="#account" id="accountBtn">Účet</a></li>
+        </ul>
     </nav>
-</header>
 
-<section class="showcase">
-    <div class="showcase-content">
-        <div class="showcase-logo">
-            <img src="./images/logo_BD_png_Kreslici platno 1 kopie 2.png" alt="BDUM Logo">
-        </div>
-        <h1>Vítejte na stránkách BDUM</h1>
-    </div>
-</section>
-
-<section id="zabezpecovaci-systémy" class="about-us">
-    <div class="about-us-container">
-        <h2>O nás</h2>
-
-        <div class="about-us-content">
-            <div class="about-us-text">
-                <h3>Zabezpečovací systém</h3>
-                <p>Jsme oficiálním montážním partnerem firmy Jablotron a certifikovaným partnerem firmy Hikvision, špičkou v zabezpečovacích systémech nejen v České republice - připojíme Vás přímo na pult centrální ochrany!</p>
-            </div>
-            <div class="about-us-image">
-                <img src="images/zabezpecovaci-system.jpg" alt="Zabezpečovací systém">
-            </div>
-        </div>
-
-        <div class="about-us-content" id="kamery">
-            <div class="about-us-text">
-                <h3>Kamerové systémy</h3>
-                <p>Jsme certifikovanou montážní firmou značky HIKVISION a DAHUA, předními světovými leadery CCTV - aktivní zastrašování, barevné vidění ve dne i v noci, virtuální plot.</p>
-            </div>
-            <div class="about-us-image">
-                <img src="images/kamerove-systemy.jpg" alt="Kamerové systémy">
-            </div>
-        </div>
-
-        <div class="about-us-content" id="chytro-dum">
-            <div class="about-us-text">
-                <h3>Wi-Fi pro celý dům</h3>
-                <p>Zasíťujeme celý Váš dům i zahradu bezpečným Wi-Fi systémem, na který se můžete spolehnout. Jediná Wi-Fi pro celou domácnost.</p>
-            </div>
-            <div class="about-us-image">
-                <img src="images/wifi-pro-dum.jpg" alt="Wi-Fi pro celý dům">
-            </div>
-        </div>
-
-        <div class="about-us-content">
-            <div class="about-us-text">
-                <h3>Chytrý Dům LOXONE</h3>
-                <p>Věnujeme se přípravě, realizaci, programování a integraci systému Loxone a prvků třetích stran pro všechny typy budov.</p>
-            </div>
-            <div class="about-us-image">
-                <img src="images/loxone.jpg" alt="Chytrý dům LOXONE">
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section class="reviews">
-    <h2>Recenze našich zákazníků</h2>
-    <div class="testimonial-slider">
-        <div class="testimonial-slider-wrapper">
-            <div class="review-item">
-                <p>"Skvělý produkt, opravdu jsem spokojený s instalací kamerového systému!"</p>
-                <p>- Jan Novák</p>
-            </div>
-            <div class="review-item">
-                <p>"Děkujeme za rychlou a profesionální instalaci zabezpečovacího systému."</p>
-                <p>- Petra S.</p>
-            </div>
-            <div class="review-item">
-                <p>"Doporučuji, Wi-Fi v domě funguje perfektně a pokrytí je skvělé!"</p>
-                <p>- Martin K.</p>
-            </div>
-            <div class="review-item">
-                <p>"Opravdu efektivní chytrý dům s LOXONE, změnilo nám to život!"</p>
-                <p>- Alice T.</p>
-            </div>
-            <div class="review-item">
-                <p>"Výborná kvalita kamer, noční vidění je úžasné!"</p>
-                <p>- Roman L.</p>
-            </div>
-            <div class="review-item">
-                <p>"Velmi spokojeni s celkovou službou, vše bylo rychlé a efektivní."</p>
-                <p>- Klára F.</p>
-            </div>
-            <div class="review-item">
-                <p>"Pěkný design kamerového systému, snadná instalace a skvělá podpora."</p>
-                <p>- Marek P.</p>
-            </div>
-            <div class="review-item">
-                <p>"Super, Wi-Fi pokrytí je opravdu stabilní, doporučuji pro celou rodinu!"</p>
-                <p>- Jana M.</p>
-            </div>
+    <div id="showcase">
+        <div class="showcase-content">
+            <h1 class="l-heading">Protein</h1>
+            <p class="lead">Naše firma Vám nabízí luxusní Protein.</p>
+            <a href="" class="btn">More <i class="fa-solid fa-arrow-down"></i></a>
         </div>
     </div>
-</section>
 
-<section>
-    <button class="cta-button">Kontaktujte nás</button>
-</section>
-
-<footer> <!-- Uzavření footer tagu -->
-    <p>© 2024 BDUM - Všechna práva vyhrazena</p>
-    <div class="socials">
-        <a href="#"><img src="../images/facebook-icon.png" alt="Facebook"></a>
+    <!-- Modal pro přihlášení/registraci -->
+    <div id="accountModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Přihlášení nebo registrace</h2>
+            <form id="loginForm">
+                <label for="username">Uživatelské jméno:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Heslo:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn">Přihlásit se</button>
+            </form>
+            <hr>
+            <p>Nemáte účet? <a href="#" id="registerLink">Registrujte se zde.</a></p>
+        </div>
     </div>
-</footer>
 
-<script src="./jssoubory/scriptshowcase.js"></script>
-<script src="./jssoubory/smoothscroll.js"></script>
-</body> <!-- Uzavření body tagu -->
+    <footer>
+        <div class="footer-container">
+            <h3>O nás</h3>
+            <p>Jsme firma zaměřená na poskytování kvalitních proteinových produktů. Naším cílem je podpořit zdravý a aktivní životní styl.</p>
+        </div>
+
+        <div class="footer-container" id="contact">
+            <h3>Kontakt</h3>
+            <p>Email: <a href="mailto:info@protein.com">info@protein.com</a></p>
+            <p>Telefon: +420 123 456 789</p>
+        </div>
+
+        <div class="footer-container">
+            <h3>Sledujte nás</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Zobrazení modalu
+        const modal = document.getElementById("accountModal");
+        const accountLink = document.querySelector("#navbar ul li a[href='#account']");
+        const closeModal = document.getElementsByClassName("close")[0];
+
+        accountLink.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        }
+
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="./jssoubory/mobilemenuscript.js"></script>
+</body>
+
 </html>

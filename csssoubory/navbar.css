@@ -1,0 +1,65 @@
+/* Globální nastavení */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tělo dokumentu */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+}
+
+/* Logo a ikona */
+#navbar .logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem; /* Zajištění stejné velikosti */
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar .logo i {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 5px; /* Prostor mezi ikonou a textem */
+}
+
+/* Odkazy v navbaru */
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: #B3B9BD;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+

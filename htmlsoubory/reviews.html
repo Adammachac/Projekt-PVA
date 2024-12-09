@@ -6,11 +6,11 @@
     <title>Recenze</title>
     <link rel="stylesheet" href="../csssoubory/stylereviews.css">
     <link rel="stylesheet" href="../csssoubory/styleaccount.css">
+    <link rel="stylesheet" href="../csssoubory/navbar.css">
     <link rel="stylesheet" href="../csssoubory/widescreen.css" media="(min-width: 769px)">
     <link rel="stylesheet" href="../csssoubory/mobile.css" media="(max-width: 768px)">
 </head>
 <body>
-    <!-- Navbar -->
     <nav id="navbar">
         <div class="logo"><i class="fa-solid fa-dumbbell"></i>Protein</div>
         <div class="menu-toggle" id="mobile-menu">
@@ -26,6 +26,22 @@
             <li><a href="#account" id="accountBtn">Účet</a></li>
         </ul>
     </nav>
+        <!-- Modal pro přihlášení/registraci -->
+        <div id="accountModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Přihlášení nebo registrace</h2>
+                <form id="loginForm">
+                    <label for="username">Uživatelské jméno:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Heslo:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="btn">Přihlásit se</button>
+                </form>
+                <hr>
+                <p>Nemáte účet? <a href="#" id="registerLink">Registrujte se zde.</a></p>
+            </div>
+        </div>
 
     <!-- Recenze -->
     <section id="reviews">
@@ -72,6 +88,27 @@
         </div>
     </footer>
 
+    <script>
+        // Zobrazení modalu
+        const modal = document.getElementById("accountModal");
+        const accountLink = document.querySelector("#navbar ul li a[href='#account']");
+        const closeModal = document.getElementsByClassName("close")[0];
+
+        accountLink.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        }
+
+        closeModal.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
     <script src="../jssoubory/reviewscrips.js"></script>
     <script src="../jssoubory/mobilemenuscript.js"></script>
 </body>
